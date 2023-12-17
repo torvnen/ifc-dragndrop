@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-prod",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "build-prod": "vite build --base=/ifc-dragndrop/",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
